@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop 1.2 - HTML5 & Semantic Web</title>
+</head>
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Backstage (ผู้ใช้มองไม่เห็น): เก็บข้อมูล Metadata, Title, CSS, JavaScript -->
+        <meta charset="UTF-8">
+        <title>Workshop 1.2 HTML5</title>
+    </head>
+    <body>
+        <!-- Onstage (ผู้ใช้มองเห็น): เนื้อหาและโครงสร้างทั้งหมดที่แสดงบน Browser -->
+        <h1>ยินดีต้อนรับสู่หน้าเว็บของฉัน</h1>
+        <p>นี่คือ Workshop 1.2 เกี่ยวกับ HTML5 และ Semantic Web</p>
+    </body>
+</html>
+<body>
+
+    <!-- 1. ส่วนหัวเว็บไซต์ -->
+    <header>
+        <h1>นาย สุรสิทธิ์ ศรีสม (Surasit Srisom)</h1>
+        <p>รหัสนักศึกษา 66/44 664245049 กำลังเรียนวิชา Internet Programming</p>
+    </header>
+
+    <hr>
+
+    <!-- 2. แถบนำทาง (Navigation) -->
+    <nav>
+        <a href="#about">เกี่ยวกับฉัน</a> | 
+        <a href="#skills">ทักษะและความสามารถ</a> | 
+        <a href="#education">ประวัติการศึกษา</a> | 
+        <a href="#contact">ติดต่อ</a>
+    </nav>
+
+    <hr>
+
+    <!-- 3. ส่วนเนื้อหาหลัก -->
+    <main>
+        <!-- Section ที่ 1: เกี่ยวกับฉันและรูปโปรไฟล์ -->
+        <section id="about">
+            <h2>เกี่ยวกับฉัน</h2>
+            <img src="profile.jpg" alt="ภาพโปรไฟล์ของสุรสิทธิ์" width="200">
+            <p>สวัสดีครับ ยินดีที่ได้รู้จักครับ ผมกำลังศึกษาและฝึกฝนการพัฒนาเว็บด้วย HTML5</p>
+        </section>
+
+        <hr>
+
+        <!-- Section ที่ 2: ทักษะและประวัติการศึกษา -->
+        <section id="skills">
+            <h2>ทักษะความสามารถ (Skills)</h2>
+            <ul>
+                <li>ทักษะ: HTML5 & Web Structure</li>
+                <li>ทักษะ: Git & GitHub Version Control</li>
+                <li>ทักษะ: Problem Solving</li>
+            </ul>
+        </section>
+
+        <section id="education">
+            <h2>ประวัติการศึกษา (Education)</h2>
+            <ol>
+                <li>ระดับมัธยมศึกษา: โรงเรียนสระยายโสมวิทยา</li>
+                <li>ระดับปริญญาตรี: สาขาวิทยาการคอมพิวเตอร์ มหาวิทยาลัยราชภัฏนครปฐม</li>
+            </ol>
+        </section>
+
+        <!-- ตารางข้อมูลตัวอย่าง -->
+        <section>
+            <h2>ตารางข้อมูลตัวอย่าง</h2>
+            <table border="1">
+                <tr>
+                    <th>ประเภท</th>
+                    <th>สถานที่</th>
+                </tr>
+                <tr>
+                    <td>วัฒนธรรม</td>
+                    <td>วัดไร่ขิง</td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+        <hr>
+    
+        <!-- Section ที่ 3: กรอกข้อมูล -->
+    <h2>แบบฟอร์มติดต่อ (Contact Form)</h2>
+    <form>
+        <!-- ช่องกรอกชื่อ -->
+        <label>ชื่อ-นามสกุล:</label><br>
+        <input type="text" placeholder="กรอกชื่อของคุณ" required><br><br>
+
+        <!-- ช่องกรอกอีเมล -->
+        <label>อีเมล:</label><br>
+        <input type="email" placeholder="user@email.com" required><br><br>
+
+        <!-- ช่องกรอกรหัสผ่าน -->
+        <label>รหัสผ่าน:</label><br>
+        <input type="password" placeholder="********"><br><br>
+
+        <!-- ช่องเลือกวันที่ -->
+        <label>วันที่สะดวกติดต่อ:</label><br>
+        <input type="date"><br><br>
+
+        <!-- ปุ่มกดส่งข้อมูล -->
+        <button type="submit">ส่งข้อมูล (Submit)</button>
+    </form>
+
+        <!-- Section ที่ 4: ฟอร์มติดต่อ -->
+        <section id="contact">
+            <h2>ช่องทางการติดต่อ (Contact Form)</h2>
+            <form>
+                <label>Name</label><br>
+                <input type="text" placeholder="ชื่อ-นามสกุลของคุณ" required><br><br>
+
+                <label>Email</label><br>
+                <input type="email" placeholder="user@email.com" required><br><br>
+
+                <button type="submit">ส่งข้อมูล</button>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- 5. ส่วนท้ายเว็บไซต์ -->
+    <footer>
+        <p>&copy; 2026 Surasit Srisom. All rights reserved.</p>
+        <p>
+            <a href="https://github.com/somchaikawee4-crypto" target="_blank">ไปยัง GitHub ของฉัน</a>
+        </p>
+    </footer>
+
+</body>
+</html>
